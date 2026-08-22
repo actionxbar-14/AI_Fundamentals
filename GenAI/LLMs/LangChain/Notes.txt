@@ -1,0 +1,89 @@
+
+
+
+:: What is LangChain: 
+
+- Langchain is an open-source framework for developing applications powered by large language models(LLMs). 
+
+
+
+
+
+
+
+LangChain Detailed Notes
+========================
+
+🔹 Introduction : 
+
+- LangChain = framework for LLM-based apps
+- Supports multiple LLM providers (OpenAI, Anthropic, Google, HuggingFace)
+- Use cases: Chatbots, RAG systems, AI Agents, Workflow automation
+
+🔹 Core Building Blocks : 
+
+
+1. **Models** : 
+   - In LangChain , "models" are the interfaces through which you interact with AI models. 
+   - LLMs (text generation), Embedding models (vector representation)
+   - Unified interface for different providers
+
+2. **Prompts** :
+   - Static, Dynamic, Role-based, Few-shot
+   - PromptTemplates for reusable structures
+
+3. **Chains**
+   - Sequential (step by step), Parallel (multi-branch), Conditional (if/else logic)
+   - Example: Input → Summarize → Translate → Output
+
+4. **Indexes**
+   - Connect external data sources (PDFs, DBs, websites)
+   - Document Loaders + Text Splitters + Vector Stores
+
+5. **Memory**
+   - ConversationBufferMemory (stores all chat history)
+   - ConversationWindowMemory (last N turns)
+   - ConversationSummaryMemory (summarized context)
+   - Custom memory implementations possible
+
+6. **Agents**
+   - Autonomous reasoning + tool usage
+   - ReAct framework (Reason + Act)
+   - Agent Executors manage multi-step workflows
+
+🔹 Structured Output
+- JSON, TypedDict, Pydantic for validation
+- Output Parsers: StrOutputParser, JSONOutputParser, StructuredOutputParser
+
+🔹 Runnables & LCEL (LangChain Expression Language)
+- RunnableSequence → chain of steps
+- RunnableParallel → run tasks together
+- RunnableLambda → custom logic
+- RunnableBranch → conditional branching
+- LCEL = flexible chaining system
+
+🔹 Document Handling
+- Loaders: TextLoader, PyPDFLoader, WebBaseLoader, CSVLoader
+- Text Splitters: Length-based, Semantic, Recursive
+- Vector Stores: FAISS, Pinecone, Chroma, Qdrant, Weaviate
+- Retrievers: WikipediaRetriever, MultiQueryRetriever, ContextualCompressionRetriever
+
+🔹 RAG (Retrieval-Augmented Generation)
+- Pipeline: Indexing → Retrieval → Augmentation → Generation
+- Benefits: Up-to-date info, scalable, private data integration
+
+🔹 Tools & Agents
+- Tools = APIs/functions usable by LLMs
+- Built-in + Custom tools
+- Toolkits for specific domains (SQL, Python, etc.)
+- Agents use tools dynamically based on queries
+
+🔹 Alternatives
+- LlamaIndex (focus on data ingestion + retrieval)
+- Haystack (open-source NLP framework)
+
+🔹 Key Takeaways
+- LangChain = modular + flexible
+- Simplifies complex GenAI workflows
+- Strong ecosystem for building production-ready AI apps
+
