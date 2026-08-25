@@ -1,0 +1,26 @@
+
+1. Create a new folder. 
+
+2. open it in vscode. 
+
+3. create a new venv 
+   :-  python -m venv venv 
+
+
+4. activate venv 
+   :- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   :- .\venv\Scripts\Activate.ps1 
+
+
+
+5. create the requirement.txt 
+
+
+6. install packages from requirements.txt 
+   :- pip install -r requirements.txt 
+
+
+
+7. verify LangChain installation. 
+
+

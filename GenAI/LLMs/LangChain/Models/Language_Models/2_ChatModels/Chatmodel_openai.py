@@ -1,0 +1,16 @@
+
+# :: Using a chatModel using Closed ChatModel [ OpenAI ]:  
+
+
+from langchain_openai import ChatOpenAI 
+from dotenv import load_dotenv 
+
+
+load_dotenv() 
+
+model = ChatOpenAI(model = 'gpt-4' , temperature= 1.5 , max_completion_tokens=2500)
+
+result = model.invoke('What is the capital of India')
+
+print(result.content)
+
