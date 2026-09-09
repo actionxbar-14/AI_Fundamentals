@@ -45,6 +45,11 @@ parallel_chain = RunnableParallel({
 
 result = parallel_chain.invoke({'topic' : 'AI'})
 
+
+
 print(result['tweet'])
+
+print('-' * 50)
+
 print(result['linkdin'])
 

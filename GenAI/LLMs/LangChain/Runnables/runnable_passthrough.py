@@ -39,7 +39,7 @@ joke_gen_chain = RunnableSequence(prompt1 , model , parser)
 
 parallel_chain = RunnableParallel({
     'joke'  : RunnablePassthrough(),
-    'explanation' : RunnableSequence(prompt1 , model , parser)
+    'explanation' : RunnableSequence(prompt2 , model , parser)
 })
 
 

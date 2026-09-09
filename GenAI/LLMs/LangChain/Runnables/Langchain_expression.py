@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 from langchain_huggingface import ChatHuggingFace , HuggingFaceEndpoint
 from dotenv import load_dotenv 
 from langchain_core.prompts import PromptTemplate
@@ -35,13 +39,13 @@ parser = StrOutputParser()
 
 
 
-report_gen_chain = RunnableSequence(prompt1 ,model , parser)
+report_gen_chain = prompt1 | model | parser  #----> langchain expression
 
 branch_chain = RunnableBranch(
-    (lambda x : len(x.split()) > 200 , RunnableSequence(prompt2 , model , parser)),
+    (lambda x : len(x.split()) > 200 ,  prompt2 | model | parser),
     RunnablePassthrough()
-)
 
+)
 
 final_chain = RunnableSequence(report_gen_chain , branch_chain)
 
