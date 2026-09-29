@@ -2,4 +2,16 @@
 
 
 
-google_collab : https://colab.research.google.com/drive/1GHHGsDFB5266Cc0xDsZ6OWzkB5GGSxFW?usp=sharing
+ :: google_collab 'tools' :
+
+-->  https://colab.research.google.com/drive/1GHHGsDFB5266Cc0xDsZ6OWzkB5GGSxFW?usp=sharing
+
+
+ :: google_collab 'tools_calling' : 
+
+ --> https://colab.research.google.com/drive/1-xMYU9ExZqoySEX-XHAvEaE17PCWvc9H?usp=sharing
+
+
+ :: google_collab 'AI_Agent' :
+
+ --> https://colab.research.google.com/drive/1O7cdBtiP_GNXgL9Iz4LPzYfvTKtMtv25?usp=sharing
